@@ -143,3 +143,13 @@ C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\TodoApp.dll
 C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\ref\TodoApp.dll
 C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\TodoApp.pdb
 C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\TodoApp.genruntimeconfig.cache
+C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\Razor\Pages\Lists\Catergories\Create.cshtml.g.cs
+C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\Razor\Pages\Lists\Catergories\Delete.cshtml.g.cs
+C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\Razor\Pages\Lists\Catergories\Details.cshtml.g.cs
+C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\Razor\Pages\Lists\Catergories\Edit.cshtml.g.cs
+C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\Razor\Pages\Lists\Catergories\Index.cshtml.g.cs
+C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\Razor\Pages\Lists\Todos\Create.cshtml.g.cs
+C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\Razor\Pages\Lists\Todos\Delete.cshtml.g.cs
+C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\Razor\Pages\Lists\Todos\Details.cshtml.g.cs
+C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\Razor\Pages\Lists\Todos\Edit.cshtml.g.cs
+C:\Users\DELL\Documents\GitHub\TodoApp\TodoApp\obj\Debug\net5.0\Razor\Pages\Lists\Todos\Index.cshtml.g.cs

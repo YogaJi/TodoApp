@@ -1,0 +1,49 @@
+﻿@page
+@model TodoApp.Pages.Lists.Todos.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Todo</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Todo.Title)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.Title)
+        </dd>
+        <dd class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Todo.Catergories)
+        </dd>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.Catergories.CatergoryName)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Todo.IsDone)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.IsDone)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Todo.StartDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.StartDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Todo.FinshDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Todo.FinshDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Todo.TodoId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

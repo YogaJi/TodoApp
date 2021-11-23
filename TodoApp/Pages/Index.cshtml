@@ -8,3 +8,24 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+@*<form method="post">
+    <div>
+        <label asp-for="Todo.Title"></label>
+        <input asp-for="Todo.Title" />
+    </div>
+    <div>
+        <label asp-for="Todo.StartDate"></label>
+        <input asp-for="Blog.StartDate" />
+    </div>
+    <input type="submit" />
+</form>*@
+<section>
+    @foreach (var todo in Model.TodoList)
+    {
+        <section>
+            <h2>@todo.Title</h2>
+            <p>@todo.StartDate</p>
+        </section>
+    }
+
+</section>

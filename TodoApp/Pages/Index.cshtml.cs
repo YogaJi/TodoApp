@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using TodoApp.Data;
+using TodoApp.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,14 +14,29 @@ namespace TodoApp.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        private readonly TodoContext db;
+
+        [FromForm]
+
+        public Todo Todo { get; set; }
+        public List<Todo> TodoList { get; set; }
+        public IndexModel(ILogger<IndexModel> logger, TodoContext dbConttext)
         {
             _logger = logger;
+            db = dbConttext;
         }
 
         public void OnGet()
         {
-
+            TodoList = db.Todos.ToList();
+        }
+        public void OnPost()
+        {
+            if (ModelState.IsValid)
+            {
+                db.Todos.Add(Todo);
+                db.SaveChanges();
+            }
         }
     }
 }
