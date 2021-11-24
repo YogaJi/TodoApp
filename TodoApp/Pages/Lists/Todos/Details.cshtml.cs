@@ -21,7 +21,7 @@ namespace TodoApp.Pages.Lists.Todos
         }
 
         public Todo Todo { get; set; }
-        public Catergory Catergory { get; set; }
+        /*public Catergory Catergory { get; set; }*/
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -30,8 +30,8 @@ namespace TodoApp.Pages.Lists.Todos
                 return NotFound();
             }
 
-            Todo = await _context.Todos.Include(p => p.Catergories).FirstOrDefaultAsync(m => m.TodoId == id);
-
+            /*Todo = await _context.Todos.Include(p => p.Catergories).FirstOrDefaultAsync(m => m.TodoId == id);*/
+            Todo = await _context.Todos.FirstOrDefaultAsync(m => m.TodoId == id);
             if (Todo == null)
             {
                 return NotFound();

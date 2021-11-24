@@ -6,7 +6,6 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 @*<form method="post">
     <div>
@@ -19,13 +18,25 @@
     </div>
     <input type="submit" />
 </form>*@
+<div><h2>Tasks on going:</h2></div>
 <section>
     @foreach (var todo in Model.TodoList)
     {
-        <section>
-            <h2>@todo.Title</h2>
-            <p>@todo.StartDate</p>
-        </section>
+        if (todo.IsDone==false)
+        {
+
+    <section class="todoList">
+
+        <h2>@todo.TodoId</h2>
+        <p>@todo.Title</p>
+        <p>@todo.StartDate</p>
+        <p>-</p>
+        <p>@todo.FinshDate</p>
+        <br />
+
+    </section>
+        }
+
     }
 
 </section>
