@@ -32,12 +32,13 @@ namespace TodoApp.Pages.Lists.Todos
             }
 
             Todo = await _context.Todos.Include(p => p.Catergories).FirstOrDefaultAsync(m => m.TodoId == id);
-
+            //include catergories to the todo
             if (Todo == null)
             {
                 return NotFound();
             }
             ViewData["TodoItems"] = new SelectList(_context.Catergory, "CatergoryId", "CatergoryName");
+            //set viewData with selectList of catergoryName
             return Page();
         }
 

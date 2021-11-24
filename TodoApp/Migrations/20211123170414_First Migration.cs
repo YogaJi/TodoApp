@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TodoApp.Migrations
 {
+    //first migration to set two tables' connection
     public partial class FirstMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)

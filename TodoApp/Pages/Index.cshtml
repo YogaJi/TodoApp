@@ -7,34 +7,24 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
 </div>
-@*<form method="post">
-    <div>
-        <label asp-for="Todo.Title"></label>
-        <input asp-for="Todo.Title" />
-    </div>
-    <div>
-        <label asp-for="Todo.StartDate"></label>
-        <input asp-for="Blog.StartDate" />
-    </div>
-    <input type="submit" />
-</form>*@
+
 <div><h2>Tasks on going:</h2></div>
 <section>
+    <!--loop todo list-->
     @foreach (var todo in Model.TodoList)
     {
-        if (todo.IsDone==false)
+        if (todo.IsDone == false)
         {
+            <section class="todoList">
 
-    <section class="todoList">
+                <h2>@todo.TodoId</h2>
+                <p>@todo.Title</p>
+                <p>@todo.StartDate</p>
+                <p>-</p>
+                <p>@todo.FinshDate</p>
+                <br />
 
-        <h2>@todo.TodoId</h2>
-        <p>@todo.Title</p>
-        <p>@todo.StartDate</p>
-        <p>-</p>
-        <p>@todo.FinshDate</p>
-        <br />
-
-    </section>
+            </section>
         }
 
     }

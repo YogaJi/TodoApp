@@ -13,11 +13,11 @@ namespace TodoApp.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-
+        /*read database*/
         private readonly TodoContext db;
 
         [FromForm]
-
+        /*add todo model to list<>*/
         public Todo Todo { get; set; }
         public List<Todo> TodoList { get; set; }
         public IndexModel(ILogger<IndexModel> logger, TodoContext dbConttext)

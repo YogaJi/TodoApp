@@ -19,6 +19,7 @@
                 <input asp-for="Todo.Title" class="form-control" />
                 <span asp-validation-for="Todo.Title" class="text-danger"></span>
             </div>
+            @*add catergories items*@
             <div class="form-group">
                 <label asp-for="Todo.Catergories" class="control-label"></label>
                 <select asp-for="Todo.Catergories" class="form-control" asp-items="ViewBag.TodoItems"></select>

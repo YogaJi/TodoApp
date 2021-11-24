@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - Todos</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <style>  a :hover { color:dimgray;}</style>
+    @*add header's style to the direct html page*@
 </head>
 <body>
     <header>
@@ -21,6 +23,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
+                        @*add catergory and todo model CRUD pages to the nav*@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Lists/Catergories/Index">Catergory</a>
                         </li>

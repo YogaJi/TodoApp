@@ -12,11 +12,13 @@ namespace TodoApp.Data
         public DbSet<Todo> Todos { get; set; }
         public DbSet<Catergory> Catergory { get; set; }
 
+        //Connect database
 
-        /*        protected override void OnConfiguring(DbContextOptionsBuilder builder)
-                {
-                    builder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=TodoList;Integrated Security=true;");
-                }*/
+        /*  protected override void OnConfiguring(DbContextOptionsBuilder builder)
+        {
+        builder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=TodoList;Integrated Security=true;");
+        }*/
+
         public TodoContext(DbContextOptions<TodoContext> options)
             : base(options)
         {
